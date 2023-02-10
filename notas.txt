@@ -1,0 +1,152 @@
+função input-
+nome = input ('qual o seu nome')
+
+
+
+
+------------------------------------
+condições-
+comida = 'pizza'
+if comida == 'pizza': //igual
+    print('possui muita calorias')
+    
+elif comida == 'abobora':
+    print('possui pocas')
+
+-----------------------------------------
+condições-
+comida = 'pizza'
+if comida != pizza': //DIFERENTE
+    print('possui muita calorias')
+    
+elif comida == 'abobora':
+    print('possui pocas')
+
+----------------------------------------
+
+estrutura de repetição- //texto
+comida = input ('digite o nome do alimento')
+
+if comida != 'arroz':
+    print('possui muita calorias')
+    
+elif comida == 'abobora':
+    print('possui pocas')
+elif comida == 'arroz':
+    print('possui pocas')
+elif comida == 'mesa':
+    print('não existe')
+elif comida == 'pizza':
+    print('possui muita calorias')
+else:
+    print('desconheço as calorias')
+
+------------------------------------------
+
+estrutura de repetição-
+ano = int(input('em que ano voce nasceu')) //inteiro
+idade = 2022 - ano
+
+if idade >= 18:
+    print('voce é adulto')
+
+else:
+    print('voce ainda não é adulto')
+
+----------------------------------------------
+
+estrutura de repetição-
+ano = bool(input('em que ano voce nasceu')) //booleana
+idade = 2022 - ano
+
+if idade == 18:
+    print('voce é adulto')
+elif idade >= 100:
+    print('digite uma idade valida')
+elif idade <= 0:
+    print('digite uma idade valida')
+
+--------------------------------------------------
+
+estrutura de loop-
+a=0
+for i in range (a): 
+   a = a + 1
+print (a)
+
+----------------------------------------------------
+
+estrutura de loop -  LISTA  
+lista = [2, 'oi', 8 , 10, 4, 4]
+
+for num in lista: 
+   print (num) 
+
+------------------------------------------------------
+
+estrutura de repetição while // contador 
+
+contador = 0
+while contador < 10:
+    print('ainda não deu')
+    contador = contador + 1
+print ('agora deu')
+
+-----------------------------------
+estrutura de repetição while // VER estrutura avançando passo a passo
+
+import time
+contador = 0
+while contador < 10:
+    print('ainda não deu')
+    contador = contador + 1
+    time.sleep (1)
+print ('agora deu')
+
+-------------------------------------
+
+estrutura de repetição while e break// VER estrutura avançando passo a passo
+import time
+contador = 0
+while contador < 10:
+    print('ainda não deu')
+    contador = contador + 1
+    if contador == 6:
+        break
+    time.sleep (1)
+print ('agora deu')
+
+--------------------------------------
+
+exercicio fatorial **
+
+num = int(input ( 'digite um numero ' ))
+fatorial = num
+contador = 1
+while (num - contador) > 1:
+    fatorial = fatorial*(num-contador)
+    contador +=  + 1 
+print (fatorial)
+
+------------------------------------
+    *entrada de 3 dados na mesma linha de comando*
+entrada = input().split()
+cod1 = int(entrada[0])
+q1 = int(entrada[1])
+val1 = float(entrada[2])
+
+entrada = input().split()
+cod2 = int(entrada[0])
+q2 = int(entrada[1])
+val2 = float(entrada[2])
+
+total = (q1 * val1) + (q2 * val2)
+
+print (f'VALOR A PAGAR: R$ {total:.2f}')
+
+_________________________________________
+
+criar ambiente virtual
+python - m venv env
+entrar pasta env\Scripts\Activate.ps1
+se der erro abre o poweShell - Set-EcxecutionPolice -Scope CurrentUser -EcxecutionPolice RemoteSigned
